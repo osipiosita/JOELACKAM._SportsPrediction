@@ -5,7 +5,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error  
 
 
-with open ('best_model.pkl', 'rb') as f:
+with open ('best_model2.pkl', 'rb') as f:
     model = pkl.load(f)
 
 #featuress required for the model
