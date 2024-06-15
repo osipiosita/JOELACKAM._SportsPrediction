@@ -653,7 +653,7 @@ import pickle as pkl
 
 
 #writing model to file
-with open('best_model.pkl', 'wb') as f:
+with open('best_model2.pkl', 'wb') as f:
     pkl.dump(best_model,f)
 
 
@@ -661,7 +661,7 @@ with open('best_model.pkl', 'wb') as f:
 
 
 #loading model from file
-with open('best_model.pkl','rb') as file:
+with open('best_model2.pkl','rb') as file:
     loaded_model = pkl.load(file)
 
 
