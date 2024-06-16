@@ -1,12 +1,12 @@
 import streamlit as st
-import pickle as pkl
+import pickle 
 import numpy as np
 from sklearn.ensemble import RandomForestRegressor  
 from sklearn.metrics import mean_squared_error  
 
 
 with open ('best_model2.pkl', 'rb') as f:
-    model = pkl.load(f)
+    model = pickle.load(f)
 
 #featuress required for the model
 features = ['movement_reactions', 'mentality_composure', 'potential',
