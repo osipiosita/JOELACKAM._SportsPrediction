@@ -19,13 +19,13 @@ st.title('FIFA Player Rating Prediction')
 
 data = []
 for feature in features:
-    value = st.number_input(f"Enter {feature}", min_value=0.0, step=0.01, key=f'{feature}_input')
+    value = st.number_input(f"Enter {feature}", min_value=0.0, step=10, key=f'{feature}_input')
     data.append(value)
 
 if st.button('Predict'):
     data = np.array(data).reshape(1,-1)
     prediction = model.predict(data)
 
-    confidence_score = 0.98 # R2 score obtained after training random forest regressor model
+    confidence_score = 0.95 # R2 score obtained after training random forest regressor model
     st.write(f'Predicted Player Rating: {prediction[0]:0.2f}')
     st.write(f'Confidence Score (R-squared): {confidence_score:.4f}')
