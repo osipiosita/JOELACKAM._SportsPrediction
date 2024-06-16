@@ -19,7 +19,7 @@ st.title('FIFA Player Rating Prediction')
 
 data = []
 for feature in features:
-    value = st.number_input(f"Enter {feature}", min_value=0.0, step=10, key=f'{feature}_input')
+    value = st.number_input(f"Enter {feature}", min_value=0.0, step=10.0, key=f'{feature}_input')
     data.append(value)
 
 if st.button('Predict'):
